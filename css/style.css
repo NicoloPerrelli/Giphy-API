@@ -1,0 +1,31 @@
+#buttons{
+	background-image: url("download.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: black;
+	height: 70px;
+	width: 100%;
+	padding: 10px;
+}
+
+#gifs{
+	background-image: url("aa.jpg");
+	background-position: center;
+	
+	padding: 10px;
+	height: 100%;
+	align-self: auto;
+	min-height: 500px;
+}
+
+#serachbox{
+	background-color: slategray;
+}
+
+p{
+	color: red;
+}
+button{
+	margin: 2px;
+	padding: 2px;
+}

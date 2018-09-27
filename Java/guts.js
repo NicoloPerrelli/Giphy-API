@@ -1,4 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 var spaceThings = ["Commet", "Jupiter", "Saturn", "Nebula"];
 
@@ -8,7 +7,10 @@ $("#add-space").on("click", function() {
 	var spaceThing = $("#space-input").val();
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + spaceThing + "&api_key=dc6zaTOxFJmzC&limit=10";
 
-	var b = $("<button text=spaceThing>");
+	var b = $("<button>");
+	b.addClass("thing");
+	b.attr("data-name", spaceThing);
+	b.text(spaceThing);
 	$("#buttons").prepend(b);
 
 	$.ajax({

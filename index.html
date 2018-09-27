@@ -4,19 +4,22 @@
 <head>
 	<meta charset="utf-8">
 	<title>SPACE GIFS</title>
+	<link rel="stylesheet" href="css\style.css">
 </head>
 
 <body>
 	<div id="buttons"></div>
 
-	<label for="space-input">Add a Space</label>
-	<input type="text" id="space-input" value="empty space"><br>
+	<div id=serachbox>
+		<label for="space-input">Space: </label>
+		<input type="text" id="space-input" value="space thing"><br>
 
-	<input id="add-space" type="submit" value="SpAcE!">
-
+		<input id="add-space" type="submit" value="SpAcE!">
+	</div>
 	<div id="gifs"></div>
 
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="java\guts.js"></script>
 </body>
 
 </html>
